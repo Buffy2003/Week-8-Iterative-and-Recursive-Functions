@@ -15,14 +15,14 @@ def factorial_iterative(num):
     return fact
 
 def main():
-    numList = [0, 5, 10, 25, 50, 100]
+    numList = [0, 5, 10, 25, 50, 100, 100]
     print("Factorial results using an iterave function:")
     for num in numList:
         print(f'{num}! = {factorial_iterative(num)}')
     print()
     print("Factorial results using a recursive function:")
     for num in numList:
-        print(num, '! =', factorial_recursive(num))
+        print(f'{num}! =', factorial_recursive(num))
 
 if __name__ == "__main__":
     main()
